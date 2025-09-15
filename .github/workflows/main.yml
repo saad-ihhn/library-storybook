@@ -21,11 +21,19 @@ jobs:
           node-version: 22
           cache: npm
 
-      # 👇 Configure auth for private packages
       - name: Configure npm for GitHub Packages
         run: |
           echo "@saad-ihhn:registry=https://npm.pkg.github.com" > ~/.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN_ACCESS }}" >> ~/.npmrc
+
+      - name: Show .npmrc content
+        run: cat ~/.npmrc
+
+      - name: Check npm authentication
+        run: npm whoami --registry=https://npm.pkg.github.com
+
+      - name: Test install private package
+        run: npm install @saad-ihhn/ihhn-host-lib@2.5.2 --registry=https://npm.pkg.github.com --prefer-offline
 
       # Install dependencies
       - name: Install dependencies
