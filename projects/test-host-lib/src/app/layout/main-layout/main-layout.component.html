@@ -1,0 +1,14 @@
+<mat-drawer-container class="h-dvh overflow-visible" [hasBackdrop]="isMobileScreen">
+  <mat-drawer #drawer mode="over"
+    [style.width]="isMobileScreen ? '240px' : (isSidebarOpen ? '240px' : '60px')"
+    [opened]="!isMobileScreen || isDrawerOpen"
+    (closed)="onDrawerClosed()">
+    <app-side-bar (sidebarToggled)="onSidebarToggled($event)"></app-side-bar>
+  </mat-drawer>
+  <mat-drawer-content [style.margin-left]="isMobileScreen ? '0' : (isSidebarOpen ? '240px' : '60px')">
+    <app-header (toggleDrawer)="toggleDrawer()"></app-header>
+    <main class="p-4">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,211 @@
+[
+  {
+    "icon": "text_fields",
+    "route": "components/form-fields",
+    "label": "Form Fields",
+    "color": "#10b981",
+    "hasSubMenu": true,
+    "subMenu": [
+      { "label": "Text Field", "route": "components/form-fields/text-field", "icon": "short_text" },
+      { "label": "Email", "route": "components/form-fields/email", "icon": "email" },
+      { "label": "Password", "route": "components/form-fields/password", "icon": "lock" },
+      { "label": "Phone", "route": "components/form-fields/phone", "icon": "phone" },
+      { "label": "Number", "route": "components/form-fields/number", "icon": "pin" },
+      { "label": "URL", "route": "components/form-fields/url", "icon": "link" },
+      { "label": "Checkbox", "route": "components/form-fields/checkbox", "icon": "check_box" },
+      { "label": "Radio Button", "route": "components/form-fields/radio-btn", "icon": "radio_button_checked" },
+      { "label": "Select", "route": "components/form-fields/select", "icon": "arrow_drop_down_circle" },
+      { "label": "Multi Select", "route": "components/form-fields/multi-select", "icon": "checklist" },
+      { "label": "Date Picker", "route": "components/form-fields/date-picker", "icon": "event" },
+      { "label": "Date Range Picker", "route": "components/form-fields/date-range-picker", "icon": "date_range" },
+      { "label": "Month Picker", "route": "components/form-fields/month", "icon": "calendar_view_month" },
+      { "label": "Week Picker", "route": "components/form-fields/week", "icon": "view_week" },
+      { "label": "Time Picker", "route": "components/form-fields/time-picker", "icon": "access_time" },
+      { "label": "Array Form", "route": "components/form-fields/array-form", "icon": "view_list" },
+      { "label": "Dynamic Object to Form", "route": "components/form-fields/object-to-form", "icon": "dynamic_form" },
+      { "label": "Auto Complete", "route": "components/form-fields/autocomplete", "icon": "autocomplete" },
+      { "label": "Auto Complete Server", "route": "components/form-fields/autocomplete-server", "icon": "autocomplete" },
+      { "label": "Textarea", "route": "components/form-fields/textarea", "icon": "text_fields" }
+    ]
+  },
+  {
+    "icon": "miscellaneous_services",
+    "route": "services",
+    "label": "Services Class",
+    "color": "#fb923c",
+    "hasSubMenu": true,
+    "subMenu": [
+      { "label": "Data Transfer", "route": "services/data-transfer", "icon": "sync_alt" },
+      { "label": "Encrypt & Decrypt", "route": "services/encrypt-decrypt", "icon": "vpn_key" },
+      { "label": "Toast Service", "route": "services/toast-service", "icon": "notifications" },
+      { "label": "Debounce Service", "route": "services/debouncing-service", "icon": "timer" },
+      { "label": "Throttling Service", "route": "services/throttling-service", "icon": "speed" }
+    ]
+  },
+  {
+    "icon": "view_list",
+    "route": "components/table",
+    "label": "Tables",
+    "color": "#22d3ee",
+    "hasSubMenu": true,
+    "subMenu": [
+      {
+        "label": "Basic Table",
+        "hasSubMenu": true,
+        "subMenu": [
+          { "label": "Client Side", "route": "components/table/basic-table/client-side" },
+          { "label": "Server Side", "route": "components/table/basic-table/server-side" }
+        ]
+      },
+      {
+        "label": "Intermediate Table",
+        "hasSubMenu": true,
+        "subMenu": [
+          { "label": "Client Side", "route": "components/table/intermediate-table/client-side" },
+          { "label": "Server Side", "route": "components/table/intermediate-table/server-side" }
+        ]
+      },
+      {
+        "label": "Advanced Table",
+        "hasSubMenu": true,
+        "subMenu": [
+          { "label": "Client Side", "route": "components/table/advanced-table/client-side" },
+          { "label": "Server Side", "route": "components/table/advanced-table/server-side" }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "color_lens",
+    "route": "theming",
+    "label": "Theming Variables",
+    "color": "#22d3ee",
+    "hasSubMenu": true,
+    "subMenu": [
+      { "label": "Typography Color", "route": "theming/typography-color", "icon": "format_color_text" }
+    ]
+  },
+  {
+    "icon": "dashboard",
+    "route": "layout",
+    "label": "Layouts",
+    "color": "#22d3ee",
+    "hasSubMenu": true,
+    "subMenu": [
+      {
+        "label": "Authentication",
+        "hasSubMenu": true,
+        "subMenu": [
+          { "label": "Signin", "route": "layout/authentication/signin" },
+          { "label": "Forget Password", "route": "layout/authentication/forget-password" },
+          { "label": "Change Password", "route": "layout/authentication/change-password" },
+          { "label": "Page Not Found (404)", "route": "layout/authentication/page-not-found" },
+          { "label": "Internal Server Error (500)", "route": "layout/authentication/internal-server-error" },
+          { "label": "Access Denied (403)", "route": "layout/authentication/access-denied" }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "http",
+    "route": "api",
+    "label": "HTTP Calls",
+    "color": "#3b82f6",
+    "hasSubMenu": true,
+    "subMenu": [
+      { "label": "Crud Resource Api", "route": "api/crud-resource", "icon": "cloud_download" },
+      { "label": "Fetch Subscribe Api", "route": "api/fetch-subscribe", "icon": "cloud_download" },
+      { "label": "To Signal API", "route": "api/to-signal", "icon": "cloud_download" },
+      { "label": "Http Resource API", "route": "api/http-resource", "icon": "cloud_download" },
+      { "label": "Login", "route": "api/login", "icon": "login" }
+    ]
+  },
+  {
+    "icon": "view_compact",
+    "route": "components/card",
+    "label": "Cards",
+    "color": "#3b82f6",
+    "hasSubMenu": true,
+    "subMenu": [
+      { "label": "Widget", "route": "components/card/widget", "icon": "cards_star" }
+    ]
+  },
+  {
+    "icon": "view_list",
+    "route": "components/list",
+    "label": "Lists",
+    "color": "#3b82f6",
+    "hasSubMenu": true,
+    "subMenu": [
+      { "label": "Notification", "route": "components/list/notification-card", "icon": "notification_multiple" },
+      { "label": "Card", "route": "components/list/card", "icon": "cards_star" }
+    ]
+  },
+  {
+    "icon": "hourglass_top",
+    "label": "Loader",
+    "route": "components/loader",
+    "color": "#8b5cf6",
+    "hasSubMenu": false
+  },
+  {
+    "icon": "donut_large",
+    "label": "Progress-Bar",
+    "route": "components/progress-bar",
+    "color": "#14b8a6",
+    "hasSubMenu": false
+  },
+  {
+    "icon": "view_week",
+    "label": "Paginator",
+    "route": "components/paginator",
+    "color": "#14b8a6",
+    "hasSubMenu": false
+  },
+  {
+    "icon": "smart_button",
+    "label": "All Buttons",
+    "route": "components/all-buttons",
+    "color": "#8b5cf6",
+    "hasSubMenu": false
+  },
+  {
+    "icon": "tab",
+    "label": "Tab",
+    "route": "components/tab",
+    "color": "#f59e0b",
+    "hasSubMenu": false
+  },
+  { "label": "Search", "route": "components/search", "icon": "search" },
+  {
+    "icon": "open_in_browser",
+    "label": "Modals",
+    "route": "components/modals",
+    "color": "#ec4899",
+    "hasSubMenu": false
+  },
+  {
+    "icon": "text_rotation_none",
+    "label": "Tooltip",
+    "route": "components/tooltip",
+    "color": "#114647",
+    "hasSubMenu": false
+  },
+   {
+    "icon": "swap_vert",
+    "label": "Expansion Panel",
+    "route": "components/expansion-panel",
+    "color": "#14b8a6",
+    "hasSubMenu": false
+  },
+  {
+    "label": "Menu",
+    "route": "components/menu",
+    "icon": "menu"
+  },
+  {
+    "label": "Sidepanel",
+    "route": "components/sidepanel",
+    "icon": "menu_open"
+  }
+]

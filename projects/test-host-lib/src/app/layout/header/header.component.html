@@ -1,0 +1,42 @@
+<header
+  class="sticky top-0 z-50 w-full border-b px-4 h-[51px] flex items-center justify-between gap-4"
+  [ngClass]="{
+    'bg-slate-900 text-slate-100 border-slate-700': $themeService.isDarkTheme(),
+    'bg-white text-gray-500 border-gray-100': !$themeService.isDarkTheme()
+  }">
+
+  <!-- Left Section (Menu + Breadcrumbs) -->
+  <div class="flex items-center flex-1 gap-3 overflow-x-auto min-w-0 scrollbar-hidden">
+    @if ($screenSize.isMobile$()) {
+      <button class="material-icons text-xl text-inherit shrink-0" (click)="toggleDrawer.emit()">
+        menu
+      </button>
+    }
+
+    <nav class="flex items-center text-sm whitespace-nowrap overflow-x-auto gap-1 min-w-0 scrollbar-hidden">
+      @for (crumb of breadcrumbs(); track crumb.url) {
+        <div class="flex items-center">
+          <a
+            [routerLink]="crumb.url"
+            class="font-medium px-2 py-1 rounded transition-colors duration-200 truncate max-w-[180px]"
+            [ngClass]="{
+            'hover:bg-gray-800': $themeService.isDarkTheme(),
+            'hover:bg-gray-100': !$themeService.isDarkTheme()}">
+            {{ crumb.label }}
+          </a>
+
+          @let length = breadcrumbs().length;
+          @if(length > 1 && crumb !== breadcrumbs()[length - 1]) {
+            <span class="mx-1"
+            [ngClass]="{
+            'text-slate-100': $themeService.isDarkTheme(),
+            'text-gray-500': !$themeService.isDarkTheme()}">/</span>
+          }
+        </div>
+      }
+    </nav>
+  </div>
+
+  <!-- Right Section (Optional actions in future) -->
+  <div class="shrink-0 hidden sm:flex items-center"></div>
+</header>
