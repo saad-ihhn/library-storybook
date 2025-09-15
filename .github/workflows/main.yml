@@ -25,6 +25,7 @@ jobs:
         run: |
           echo "@saad-ihhn:registry=https://npm.pkg.github.com" > ~/.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN_ACCESS }}" >> ~/.npmrc
+          npm whoami --registry=https://npm.pkg.github.com
 
       - name: Show .npmrc content
         run: cat ~/.npmrc
